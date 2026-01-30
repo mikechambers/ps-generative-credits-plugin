@@ -7,6 +7,9 @@ A UXP plugin for Adobe Photoshop that displays Adobe Firefly partner model infor
 - Fetches real-time model data from Adobe's official documentation
 - Displays model names and credit costs in an easy-to-read format
 
+![image](images/panel.png)
+
+
 ## Installation
 
 ### Enabled Developer Mode in Photoshop
