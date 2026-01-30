@@ -6,19 +6,29 @@ A UXP plugin for Adobe Photoshop that displays Adobe Firefly partner model infor
 
 - Fetches real-time model data from Adobe's official documentation
 - Displays model names and credit costs in an easy-to-read format
-- Scrollable panel interface matching Photoshop's dark theme
-- Refresh button to update model information
-- Shows credit costs for:
-  - Image generation models
-  - Video generation models
-  - Vector generation models
-  - Speech generation models
 
 ## Installation
 
-### Method 1: Using UXP Developer Tool (Recommended for Development)
+### Enabled Developer Mode in Photoshop
+1. Launch Photoshop (2025/26.0 or greater)
+2. Go to **Settings > Plugins** and check **"Enable Developer Mode"**
+3. Restart Photoshop
 
-1. **Download or clone this plugin** to a folder on your computer (e.g., `/Users/YourName/firefly-models-plugin/`)
+
+### Install Plugin via UXP Developer Tool
+1. Launch **UXP Developer Tools** from Creative Cloud
+2. Enable developer mode when prompted
+3. Select **File > Add Plugin**
+4. Navigate to the the directory you downloaded the files and select **manifest.json**:
+5. Click **Load**
+6. In your Photoshop, open the plugin panel and click **Connect**
+
+
+
+
+
+
+1. **Download or clone this plugin** to a folder on your computer (e.g., `/Users/YourName/ps-generative-credits-plugin/`)
 
 2. **Open Adobe Photoshop** (version 24.0.0 or later)
 
@@ -40,20 +50,7 @@ A UXP plugin for Adobe Photoshop that displays Adobe Firefly partner model infor
    - In Photoshop, go to `Plugins > Firefly Models`
    - The plugin panel will open showing the model information
 
-### Method 2: Manual Installation (For End Users)
 
-1. **Package the plugin**:
-   - In the UXP Developer Tool, click the `•••` menu next to the plugin
-   - Select `Package`
-   - Choose a location to save the `.ccx` file
-
-2. **Install the packaged plugin**:
-   - Double-click the `.ccx` file
-   - Follow the Adobe Creative Cloud installation prompts
-   - Restart Photoshop if needed
-
-3. **Access the plugin**:
-   - In Photoshop, go to `Plugins > Firefly Models`
 
 ## Usage
 

@@ -3,6 +3,7 @@
   "name": "Generative Credits Costs",
   "version": "1.0.0",
   "main": "index.html",
+  "manifestVersion": 5,
   "host": [
     {
       "app": "PS",
@@ -12,25 +13,30 @@
   "entrypoints": [
     {
       "type": "panel",
-      "id": "firefly.models.panel",
-      "label": {
-        "default": "Firefly Models"
+      "id": "creditsPanel",
+      "minimumSize": {
+        "width": 300,
+        "height": 400
+      },
+      "maximumSize": {
+        "width": 800,
+        "height": 2000
+      },
+      "preferredDockedSize": {
+        "width": 350,
+        "height": 600
+      },
+      "preferredFloatingSize": {
+        "width": 400,
+        "height": 700
       }
     }
   ],
-  "icons": [
-    {
-      "width": 23,
-      "height": 23,
-      "path": "icons/icon.png"
-    }
-  ],
-  "requiredPermissions": [
-    {
-      "name": "network",
+  "requiredPermissions": {
+    "network": {
       "domains": [
         "https://helpx.adobe.com"
       ]
     }
-  ]
+  }
 }
